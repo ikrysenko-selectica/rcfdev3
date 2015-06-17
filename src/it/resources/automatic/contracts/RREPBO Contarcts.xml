@@ -1,0 +1,166 @@
+<suite>
+  <id>RREPBO Contarcts</id>
+  <enable>true</enable>
+  <userLogin>epavlovskaya@provectus.com</userLogin>
+  <userPassword>Sel123_</userPassword>
+  <contracts>
+    <contract>
+      <id>RREPBO - Contract 1</id>
+      <enable>true</enable>
+      <stages>
+        <stage>
+          <id>Manage stage</id>
+          <enable>true</enable>
+          <name>Manage</name>
+          <events>
+            <event>
+              <id>CREATE_BO event</id>
+              <enable>true</enable>
+              <type>CREATE_BO</type>
+              <input>
+                  <entry>
+                    <string>RREPBO</string>
+                    <set>
+                        <entry>
+                          <string>summary</string>
+                            <entry>
+                              <string>agreementType</string>
+                              <string>Master Agreement</string>
+                            </entry>
+                            <entry>
+                              <string>businessUnit</string>
+                              <string>Information Technology Division</string>
+                            </entry>
+                            <entry>
+                              <string>typeOfEntity</string>
+                              <string>Sole Proprietorship</string>
+                            </entry>
+                            <entry>
+                              <string>requestDate</string>
+                              <string>20140427</string>
+                            </entry>
+                            <entry>
+                              <string>governingLaw</string>
+                              <string>Arkansas</string>
+                            </entry>
+                            <entry>
+                              <string>termType</string>
+                              <string>Years</string>
+                            </entry>
+                            <entry>
+                              <string>counterpartyName</string>
+                              <string>Britanney Harrington</string>
+                            </entry>
+                            <entry>
+                              <string>term</string>
+                              <string>2</string>
+                            </entry>
+                            <entry>
+                              <string>requestor</string>
+                              <string>Alex Berestenko</string>
+                            </entry>
+                            <entry>
+                              <string>effectiveDate</string>
+                              <string>20140509</string>
+                            </entry>
+                            <entry>
+                              <string>legalEntity</string>
+                              <string>Legal Entity 3</string>
+                            </entry>
+                        </entry>
+                    </set>
+                  </entry>
+              </input>
+              <output>
+                  <entry>
+                    <string>RREPBO</string>
+                    <set>
+                        <entry>
+                          <string>summary</string>
+                            <entry>
+                              <string>isDocumentChanged</string>
+                              <string>false</string>
+                            </entry>
+                            <entry>
+                              <string>agreementType</string>
+                              <string>Master Agreement</string>
+                            </entry>
+                            <entry>
+                              <string>contractStatus</string>
+                              <string>Active</string>
+                            </entry>
+                            <entry>
+                              <string>counterpartyCountry</string>
+                              <string>US</string>
+                            </entry>
+                            <entry>
+                              <string>typeOfEntity</string>
+                              <string>Sole Proprietorship</string>
+                            </entry>
+                            <entry>
+                              <string>governingLaw</string>
+                              <string>Arkansas</string>
+                            </entry>
+                            <entry>
+                              <string>termType</string>
+                              <string>Years</string>
+                            </entry>
+                            <entry>
+                              <string>bundleCategory</string>
+                              <string>M</string>
+                            </entry>
+                            <entry>
+                              <string>requestor</string>
+                              <string>Alex Berestenko</string>
+                            </entry>
+                            <entry>
+                              <string>legalEntity</string>
+                              <string>Legal Entity 3</string>
+                            </entry>
+                            <entry>
+                              <string>counterpartyCity</string>
+                              <string>Rialto</string>
+                            </entry>
+                            <entry>
+                              <string>requestDate</string>
+                              <string>20140427</string>
+                            </entry>
+                            <entry>
+                              <string>counterpartyName</string>
+                              <string>Britanney Harrington</string>
+                            </entry>
+                            <entry>
+                              <string>counterpartyZipPostalCode</string>
+                              <string>92263</string>
+                            </entry>
+                            <entry>
+                              <string>counterpartyAddress1</string>
+                              <string>6985 Neque Av.</string>
+                            </entry>
+                            <entry>
+                              <string>term</string>
+                              <string>2</string>
+                            </entry>
+                            <entry>
+                              <string>counterpartyState</string>
+                              <string>Alaska</string>
+                            </entry>
+                            <entry>
+                              <string>effectiveDate</string>
+                              <string>20140509</string>
+                            </entry>
+                            <entry>
+                              <string>expirationDate</string>
+                              <string>20160508</string>
+                            </entry>
+                        </entry>
+                    </set>
+                  </entry>
+              </output>
+            </event>
+          </events>
+        </stage>
+      </stages>
+    </contract>
+  </contracts>
+</suite>

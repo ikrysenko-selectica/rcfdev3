@@ -1,0 +1,94 @@
+<suite>
+  <id>Vendor</id>
+  <enable>true</enable>
+  <userLogin>epavlovskaya@provectus.com</userLogin>
+  <userPassword>Sel123_</userPassword>
+  <contracts>
+    <contract>
+      <id>Vendor 1</id>
+      <enable>true</enable>
+      <stages>
+        <stage>
+          <id>Manage stage</id>
+          <enable>true</enable>
+          <name>Manage</name>
+          <events>
+            <event>
+              <id>CREATE_BO event</id>
+              <enable>true</enable>
+              <type>CREATE_BO</type>
+              <input>
+                  <entry>
+                    <string>DVendorBO</string>
+                    <set>
+                        <entry>
+                          <string>summary</string>
+                            <entry>
+                              <string>country</string>
+                              <string>US</string>
+                            </entry>
+                            <entry>
+                              <string>vendorNicknameAKA</string>
+                              <string>Hersheys</string>
+                            </entry>
+                            <entry>
+                              <string>website</string>
+                              <string>http://www.thehersheycompany.com</string>
+                            </entry>
+                            <entry>
+                              <string>vendorCategory</string>
+                              <string>Category 1</string>
+                            </entry>
+                            <entry>
+                              <string>zipPostalCode</string>
+                              <string>60611</string>
+                            </entry>
+                            <entry>
+                              <string>city</string>
+                              <string>Chicago</string>
+                            </entry>
+                            <entry>
+                              <string>name</string>
+                              <string>Hersheys, Inc.</string>
+                            </entry>
+                            <entry>
+                              <string>addressLine1</string>
+                              <string>822 N. Michigan Ave.</string>
+                            </entry>
+                            <entry>
+                              <string>stateProvince</string>
+                              <string>IL</string>
+                            </entry>
+                            <entry>
+                              <string>description</string>
+                              <string>The company is a leader manufacturer of quality chocolate, non-chocolate confectionery, chocolate-related grocery products, in the gum and mint category.</string>
+                            </entry>
+                            <entry>
+                              <string>status</string>
+                              <string>Active</string>
+                            </entry>
+                        </entry>
+                        <entry>
+                          <string>formerlyKnownAsFKA</string>
+                            <entry>
+                              <string>newBusinessName</string>
+                              <string>The Hersheys, Inc.</string>
+                            </entry>
+                        </entry>
+                        <entry>
+                          <string>dBADetails</string>
+                            <entry>
+                              <string>dBAName</string>
+                              <string>The Hershey Company is the leading North American manufacturer of quality chocolate and non-chocolate confectionery and chocolate-related grocery products. The company also is a leader in the gum and mint category.</string>
+                            </entry>
+                        </entry>
+                    </set>
+                  </entry>
+              </input>
+            </event>
+          </events>
+        </stage>
+      </stages>
+    </contract>
+  </contracts>
+</suite>

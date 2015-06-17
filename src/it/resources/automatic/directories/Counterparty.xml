@@ -1,0 +1,339 @@
+<suite>
+  <id>Counterparty</id>
+  <enable>true</enable>
+  <userLogin>epavlovskaya@provectus.com</userLogin>
+  <userPassword>Sel123_</userPassword>
+  <contracts>
+    <contract>
+      <id>Counterparty 1</id>
+      <enable>true</enable>
+      <stages>
+        <stage>
+          <id>Manage stage</id>
+          <enable>true</enable>
+          <name>Manage</name>
+          <events>
+            <event>
+              <id>CREATE_BO event</id>
+              <enable>true</enable>
+              <type>CREATE_BO</type>
+              <input>
+                  <entry>
+                    <string>DCPBO</string>
+                    <set>
+                        <entry>
+                          <string>summary</string>
+                            <entry>
+                              <string>country</string>
+                              <string>US</string>
+                            </entry>
+                            <entry>
+                              <string>website</string>
+                              <string>www.bemismfg.com</string>
+                            </entry>
+                            <entry>
+                              <string>zipPostalCode</string>
+                              <string>53085-0901</string>
+                            </entry>
+                            <entry>
+                              <string>city</string>
+                              <string>Sheboygan Falls</string>
+                            </entry>
+                            <entry>
+                              <string>name</string>
+                              <string>Bemis Manufacturing Company, Inc</string>
+                            </entry>
+                            <entry>
+                              <string>addressLine1</string>
+                              <string>300 Mill Street</string>
+                            </entry>
+                            <entry>
+                              <string>stateProvince</string>
+                              <string>WI</string>
+                            </entry>
+                            <entry>
+                              <string>description</string>
+                              <string>Bemis Manufacturing Company, Inc. manufactures and distributes commercial buildings.</string>
+                            </entry>
+                            <entry>
+                              <string>status</string>
+                              <string>Active</string>
+                            </entry>
+                        </entry>
+                        <entry>
+                          <string>dBADetails</string>
+                            <entry>
+                              <string>dBAName</string>
+                              <string>Bemis Manufacturing Company, Inc. manufactures and distributes commercial buildings, and OEM industries in the United States and internationally.</string>
+                            </entry>
+                        </entry>
+                    </set>
+                  </entry>
+              </input>
+            </event>
+          </events>
+        </stage>
+        <stage>
+          <id>Manage stage</id>
+          <enable>true</enable>
+          <name>Manage</name>
+          <events>
+            <event>
+              <id>CREATE_BO event</id>
+              <enable>true</enable>
+              <type>CREATE_BO</type>
+              <input>
+                  <entry>
+                    <string>DCPBO</string>
+                    <set>
+                        <entry>
+                          <string>summary</string>
+                            <entry>
+                              <string>country</string>
+                              <string>US</string>
+                            </entry>
+                            <entry>
+                              <string>website</string>
+                              <string>www.Abbott.com</string>
+                            </entry>
+                            <entry>
+                              <string>zipPostalCode</string>
+                              <string>43023</string>
+                            </entry>
+                            <entry>
+                              <string>city</string>
+                              <string>Granville</string>
+                            </entry>
+                            <entry>
+                              <string>name</string>
+                              <string>Abbott Laboratories</string>
+                            </entry>
+                            <entry>
+                              <string>addressLine1</string>
+                              <string>124 East Broadway</string>
+                            </entry>
+                            <entry>
+                              <string>stateProvince</string>
+                              <string>OH</string>
+                            </entry>
+                            <entry>
+                              <string>description</string>
+                              <string>Upscale clothing &amp;amp; jeans for women, &amp;amp; also an official Vera Bradley retailer.</string>
+                            </entry>
+                            <entry>
+                              <string>status</string>
+                              <string>Active</string>
+                            </entry>
+                        </entry>
+                        <entry>
+                          <string>dBADetails</string>
+                            <entry>
+                              <string>dBAName</string>
+                              <string>Upscale clothing &amp;amp; jeans for women, &amp;amp; also an official Vera Bradley retailer.</string>
+                            </entry>
+                        </entry>
+                    </set>
+                  </entry>
+              </input>
+            </event>
+          </events>
+        </stage>
+        <stage>
+          <id>Manage stage</id>
+          <enable>true</enable>
+          <name>Manage</name>
+          <events>
+            <event>
+              <id>CREATE_BO event</id>
+              <enable>true</enable>
+              <type>CREATE_BO</type>
+              <input>
+                  <entry>
+                    <string>DCPBO</string>
+                    <set>
+                        <entry>
+                          <string>summary</string>
+                            <entry>
+                              <string>country</string>
+                              <string>US</string>
+                            </entry>
+                            <entry>
+                              <string>website</string>
+                              <string>www.ABM.com</string>
+                            </entry>
+                            <entry>
+                              <string>zipPostalCode</string>
+                              <string>60611</string>
+                            </entry>
+                            <entry>
+                              <string>city</string>
+                              <string>Chicago</string>
+                            </entry>
+                            <entry>
+                              <string>name</string>
+                              <string>ABM Industries</string>
+                            </entry>
+                            <entry>
+                              <string>addressLine1</string>
+                              <string>500 N MICHIGAN AVE SUITE 300</string>
+                            </entry>
+                            <entry>
+                              <string>stateProvince</string>
+                              <string>IL</string>
+                            </entry>
+                            <entry>
+                              <string>description</string>
+                              <string>Industries</string>
+                            </entry>
+                            <entry>
+                              <string>status</string>
+                              <string>Active</string>
+                            </entry>
+                        </entry>
+                        <entry>
+                          <string>dBADetails</string>
+                            <entry>
+                              <string>dBAName</string>
+                              <string>The company manufactures hardware.</string>
+                            </entry>
+                        </entry>
+                    </set>
+                  </entry>
+              </input>
+            </event>
+          </events>
+        </stage>
+        <stage>
+          <id>Manage stage</id>
+          <enable>true</enable>
+          <name>Manage</name>
+          <events>
+            <event>
+              <id>CREATE_BO event</id>
+              <enable>true</enable>
+              <type>CREATE_BO</type>
+              <input>
+                  <entry>
+                    <string>DCPBO</string>
+                    <set>
+                        <entry>
+                          <string>summary</string>
+                            <entry>
+                              <string>country</string>
+                              <string>US</string>
+                            </entry>
+                            <entry>
+                              <string>website</string>
+                              <string>www.atajiave.com</string>
+                            </entry>
+                            <entry>
+                              <string>zipPostalCode</string>
+                              <string>11949</string>
+                            </entry>
+                            <entry>
+                              <string>city</string>
+                              <string>Manorville</string>
+                            </entry>
+                            <entry>
+                              <string>name</string>
+                              <string>ATAJI AVE</string>
+                            </entry>
+                            <entry>
+                              <string>addressLine1</string>
+                              <string>POB 563</string>
+                            </entry>
+                            <entry>
+                              <string>stateProvince</string>
+                              <string>NY</string>
+                            </entry>
+                            <entry>
+                              <string>description</string>
+                              <string>Clothes.</string>
+                            </entry>
+                            <entry>
+                              <string>status</string>
+                              <string>Active</string>
+                            </entry>
+                        </entry>
+                        <entry>
+                          <string>dBADetails</string>
+                            <entry>
+                              <string>dBAName</string>
+                              <string>ATAJI AVE is a unique women&apos;s online fashion boutique.</string>
+                            </entry>
+                        </entry>
+                    </set>
+                  </entry>
+              </input>
+            </event>
+          </events>
+        </stage>
+        <stage>
+          <id>Manage stage</id>
+          <enable>true</enable>
+          <name>Manage</name>
+          <events>
+            <event>
+              <id>CREATE_BO event</id>
+              <enable>true</enable>
+              <type>CREATE_BO</type>
+              <input>
+                  <entry>
+                    <string>DCPBO</string>
+                    <set>
+                        <entry>
+                          <string>summary</string>
+                            <entry>
+                              <string>country</string>
+                              <string>US</string>
+                            </entry>
+                            <entry>
+                              <string>website</string>
+                              <string>www.nells.com</string>
+                            </entry>
+                            <entry>
+                              <string>zipPostalCode</string>
+                              <string>53085-0901</string>
+                            </entry>
+                            <entry>
+                              <string>city</string>
+                              <string>West Palm Beach</string>
+                            </entry>
+                            <entry>
+                              <string>name</string>
+                              <string>Nell&apos;s Natural</string>
+                            </entry>
+                            <entry>
+                              <string>addressLine1</string>
+                              <string>5707 S Dixie Hwy Ste F</string>
+                            </entry>
+                            <entry>
+                              <string>stateProvince</string>
+                              <string>FL</string>
+                            </entry>
+                            <entry>
+                              <string>description</string>
+                              <string>Cloth diaper business.</string>
+                            </entry>
+                            <entry>
+                              <string>status</string>
+                              <string>Active</string>
+                            </entry>
+                        </entry>
+                        <entry>
+                          <string>dBADetails</string>
+                            <entry>
+                              <string>dBAName</string>
+                              <string>Cloth diaper business.</string>
+                            </entry>
+                        </entry>
+                    </set>
+                  </entry>
+              </input>
+            </event>
+          </events>
+        </stage>
+      </stages>
+    </contract>
+  </contracts>
+</suite>

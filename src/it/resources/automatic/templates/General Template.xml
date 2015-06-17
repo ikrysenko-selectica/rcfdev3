@@ -1,0 +1,92 @@
+<suite>
+  <id>General Template</id>
+  <enable>true</enable>
+  <userLogin>epavlovskaya@provectus.com</userLogin>
+  <userPassword>Sel123_</userPassword>
+  <contracts>
+    <contract>
+      <id>General Template</id>
+      <enable>true</enable>
+      <stages>
+        <stage>
+          <id>Create stage</id>
+          <enable>true</enable>
+          <events>
+            <event>
+              <id>Create event</id>
+              <enable>true</enable>
+              <type>CREATE_BO</type>
+              <input>
+                  <entry>
+                    <string>TemplateMgmtBO</string>
+                      <entry>
+                        <string>summary</string>
+                          <entry>
+                            <string>templateName</string>
+                            <string>General_Template</string>
+                          </entry>
+                          <entry>
+                            <string>contractType</string>
+                            <string>General</string>
+                          </entry>
+                          <entry>
+                            <string>applicableTo</string>
+                            <string>Contract and Amendment</string>
+                          </entry>
+                      </entry>
+                      <entry>
+                        <string>contractTemplate</string>
+                          <entry>
+                            <string>tempServerFileName</string>
+                            <string>CGenTemplatesFile.docx</string>
+                          </entry>
+                          <entry>
+                            <string>size</string>
+                            <string>3747</string>
+                          </entry>
+                          <entry>
+                            <string>testsFilePath</string>
+                            <string>automatic/files/file.docx</string>
+                          </entry>
+                          <entry>
+                            <string>name</string>
+                            <string>CGenTemplatesFile.docx</string>
+                          </entry>
+                          <entry>
+                            <string>language</string>
+                            <string>English</string>
+                          </entry>
+                      </entry>
+                  </entry>
+              </input>
+            </event>
+          </events>
+        </stage>
+        <stage>
+          <id>Review stage</id>
+          <enable>true</enable>
+          <name>Review</name>
+          <events>
+            <event>
+              <id>Complete event</id>
+              <enable>true</enable>
+              <type>COMPLETE</type>
+            </event>
+          </events>
+        </stage>
+        <stage>
+          <id>Manage stage</id>
+          <enable>true</enable>
+          <name>Manage</name>
+          <events>
+            <event>
+              <id>Complete event</id>
+              <enable>true</enable>
+              <type>COMPLETE</type>
+            </event>
+          </events>
+        </stage>
+      </stages>
+    </contract>
+  </contracts>
+</suite>

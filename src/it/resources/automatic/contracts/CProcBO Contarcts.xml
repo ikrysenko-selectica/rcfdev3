@@ -1,0 +1,304 @@
+<suite>
+  <id>CProcBO Contarcts</id>
+  <enable>true</enable>
+  <userLogin>epavlovskaya@provectus.com</userLogin>
+  <userPassword>Sel123_</userPassword>
+  <contracts>
+    <contract>
+      <id>CProcBO - Contract 1</id>
+      <enable>true</enable>
+      <stages>
+        <stage>
+          <id>Request stage</id>
+          <enable>true</enable>
+          <name>Request</name>
+          <events>
+            <event>
+              <id>CREATE_BO event</id>
+              <enable>true</enable>
+              <type>CREATE_BO</type>
+              <input>
+                  <entry>
+                    <string>CProcBO</string>
+                    <set>
+                        <entry>
+                          <string>summary</string>
+                            <entry>
+                              <string>agreementType</string>
+                              <string>Master</string>
+                            </entry>
+                            <entry>
+                              <string>termRenewalComments</string>
+                              <string>Some comments one</string>
+                            </entry>
+                            <entry>
+                              <string>businessUnit</string>
+                              <string>Information Technology Division</string>
+                            </entry>
+                            <entry>
+                              <string>typeOfEntity</string>
+                              <string>LLC</string>
+                            </entry>
+                            <entry>
+                              <string>agreementCategory</string>
+                              <string>Products</string>
+                            </entry>
+                            <entry>
+                              <string>governingLaw</string>
+                              <string>California</string>
+                            </entry>
+                            <entry>
+                              <string>termType</string>
+                              <string>Months</string>
+                            </entry>
+                            <entry>
+                              <string>requestor</string>
+                              <string>Alex Berestenko</string>
+                            </entry>
+                            <entry>
+                              <string>legalEntity</string>
+                              <string>Legal Entity 2</string>
+                            </entry>
+                            <entry>
+                              <string>requestDate</string>
+                              <string>20120424</string>
+                            </entry>
+                            <entry>
+                              <string>counterpartyName</string>
+                              <string>Hersheys, Inc.</string>
+                            </entry>
+                            <entry>
+                              <string>term</string>
+                              <string>3</string>
+                            </entry>
+                            <entry>
+                              <string>descriptionOfProductsOrServices</string>
+                              <string>Very good goods ))</string>
+                            </entry>
+                            <entry>
+                              <string>effectiveDate</string>
+                              <string>20120425</string>
+                            </entry>
+                        </entry>
+                    </set>
+                  </entry>
+              </input>
+            </event>
+          </events>
+        </stage>
+        <stage>
+          <id>Assemble stage</id>
+          <enable>true</enable>
+          <name>Assemble</name>
+          <events>
+            <event>
+              <id>COMPLETE event</id>
+              <enable>true</enable>
+              <type>COMPLETE</type>
+            </event>
+            <event>
+              <id>GENERATE_CONTRACT event</id>
+              <enable>true</enable>
+              <type>GENERATE_CONTRACT</type>
+              <input>
+                  <entry>
+                    <string>com.selectica.api.dto.PropertyList</string>
+                      <entry>
+                        <string>Id</string>
+                        <string>GenerateContract</string>
+                      </entry>
+                      <entry>
+                        <string>Property</string>
+                        <set>
+                            <entry>
+                              <string>com.selectica.api.dto.PropertyType</string>
+                                <entry>
+                                  <string>Value</string>
+                                  <string>CProcTemplatesFile.docx</string>
+                                </entry>
+                                <entry>
+                                  <string>Name</string>
+                                  <string>templateFilename</string>
+                                </entry>
+                            </entry>
+                        </set>
+                      </entry>
+                  </entry>
+              </input>
+            </event>
+          </events>
+        </stage>
+        <stage>
+          <id>Collaborate stage</id>
+          <enable>true</enable>
+          <name>Collaborate</name>
+          <events>
+            <event>
+              <id>COMPLETE event</id>
+              <enable>true</enable>
+              <type>COMPLETE</type>
+            </event>
+          </events>
+        </stage>
+        <stage>
+          <id>Negotiate stage</id>
+          <enable>true</enable>
+          <name>Negotiate</name>
+          <events>
+            <event>
+              <id>COMPLETE event</id>
+              <enable>true</enable>
+              <type>COMPLETE</type>
+            </event>
+          </events>
+        </stage>
+        <stage>
+          <id>Execute stage</id>
+          <enable>true</enable>
+          <name>Execute</name>
+          <events>
+            <event>
+              <id>COMPLETE event</id>
+              <enable>true</enable>
+              <type>COMPLETE</type>
+            </event>
+          </events>
+        </stage>
+        <stage>
+          <id>Manage stage</id>
+          <enable>true</enable>
+          <name>Manage</name>
+          <events>
+            <event>
+              <id>COMPLETE event</id>
+              <enable>true</enable>
+              <type>COMPLETE</type>
+              <output>
+                  <entry>
+                    <string>CProcBO</string>
+                    <set>
+                        <entry>
+                          <string>summary</string>
+                            <entry>
+                              <string>isDocumentChanged</string>
+                              <string>false</string>
+                            </entry>
+                            <entry>
+                              <string>agreementType</string>
+                              <string>Master</string>
+                            </entry>
+                            <entry>
+                              <string>counterpartyCountry</string>
+                              <string>US</string>
+                            </entry>
+                            <entry>
+                              <string>typeOfEntity</string>
+                              <string>LLC</string>
+                            </entry>
+                            <entry>
+                              <string>termType</string>
+                              <string>Months</string>
+                            </entry>
+                            <entry>
+                              <string>subtotalOfProducts</string>
+                              <string>0</string>
+                            </entry>
+                            <entry>
+                              <string>legalEntity</string>
+                              <string>Legal Entity 2</string>
+                            </entry>
+                            <entry>
+                              <string>terminationWithoutCause</string>
+                              <string>No</string>
+                            </entry>
+                            <entry>
+                              <string>totalContractAmount</string>
+                              <string>0</string>
+                            </entry>
+                            <entry>
+                              <string>counterpartyCity</string>
+                              <string>Chicago</string>
+                            </entry>
+                            <entry>
+                              <string>requestDate</string>
+                              <string>20120424</string>
+                            </entry>
+                            <entry>
+                              <string>counterpartyZipPostalCode</string>
+                              <string>60611</string>
+                            </entry>
+                            <entry>
+                              <string>counterpartyAddress1</string>
+                              <string>822 N. Michigan Ave.</string>
+                            </entry>
+                            <entry>
+                              <string>term</string>
+                              <string>3</string>
+                            </entry>
+                            <entry>
+                              <string>descriptionOfProductsOrServices</string>
+                              <string>Very good goods ))</string>
+                            </entry>
+                            <entry>
+                              <string>expirationDate</string>
+                              <string>20120724</string>
+                            </entry>
+                            <entry>
+                              <string>termRenewalComments</string>
+                              <string>Some comments one</string>
+                            </entry>
+                            <entry>
+                              <string>agreementCategory</string>
+                              <string>Products</string>
+                            </entry>
+                            <entry>
+                              <string>governingLaw</string>
+                              <string>California</string>
+                            </entry>
+                            <entry>
+                              <string>isThisCounterpartyPaper</string>
+                              <string>No</string>
+                            </entry>
+                            <entry>
+                              <string>bundleCategory</string>
+                              <string>M</string>
+                            </entry>
+                            <entry>
+                              <string>requestor</string>
+                              <string>Alex Berestenko</string>
+                            </entry>
+                            <entry>
+                              <string>areThereAdditionalCounterparties</string>
+                              <string>No</string>
+                            </entry>
+                            <entry>
+                              <string>counterpartyName</string>
+                              <string>Hersheys, Inc.</string>
+                            </entry>
+                            <entry>
+                              <string>subtotalOfServices</string>
+                              <string>0</string>
+                            </entry>
+                            <entry>
+                              <string>autoRenewal</string>
+                              <string>No</string>
+                            </entry>
+                            <entry>
+                              <string>counterpartyState</string>
+                              <string>IL</string>
+                            </entry>
+                            <entry>
+                              <string>effectiveDate</string>
+                              <string>20120425</string>
+                            </entry>
+                        </entry>
+                    </set>
+                  </entry>
+              </output>
+            </event>
+          </events>
+        </stage>
+      </stages>
+    </contract>
+  </contracts>
+</suite>

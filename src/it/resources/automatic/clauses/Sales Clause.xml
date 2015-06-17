@@ -1,0 +1,156 @@
+<suite>
+  <id>Sales Clause</id>
+  <enable>true</enable>
+  <userLogin>epavlovskaya@provectus.com</userLogin>
+  <userPassword>Sel123_</userPassword>
+  <contracts>
+    <contract>
+      <id>Sales Clause with Text</id>
+      <enable>true</enable>
+      <stages>
+        <stage>
+          <id>Clause stage</id>
+          <enable>true</enable>
+          <events>
+            <event>
+              <id>Clause create event</id>
+              <enable>true</enable>
+              <type>CREATE_BO</type>
+              <input>
+                  <entry>
+                    <string>ClauseLibraryBO</string>
+                      <entry>
+                        <string>attributes</string>
+                          <entry>
+                            <string>clauseComments</string>
+                            <string>Some Comment</string>
+                          </entry>
+                          <entry>
+                            <string>trackIt</string>
+                            <string>Yes</string>
+                          </entry>
+                          <entry>
+                            <string>clauseCategory</string>
+                            <string>Some Category</string>
+                          </entry>
+                          <entry>
+                            <string>name</string>
+                            <string>Sales clause with Text</string>
+                          </entry>
+                          <entry>
+                            <string>clauseRisk</string>
+                            <string>None</string>
+                          </entry>
+                          <entry>
+                            <string>text</string>
+                            <string>Some Text</string>
+                          </entry>
+                          <entry>
+                            <string>clauseSubCategory</string>
+                            <string>Some subCategory</string>
+                          </entry>
+                          <entry>
+                            <string>clauseType</string>
+                            <string>Text</string>
+                          </entry>
+                          <entry>
+                            <string>contractTypeRef</string>
+                            <string>Sales</string>
+                          </entry>
+                          <entry>
+                            <string>visibleRoles</string>
+                            <string>Contract Manager|Contract Viewer|Approver</string>
+                          </entry>
+                      </entry>
+                  </entry>
+              </input>
+            </event>
+            <event>
+              <id>Clause complete event</id>
+              <enable>true</enable>
+              <type>COMPLETE</type>
+            </event>
+          </events>
+        </stage>
+      </stages>
+    </contract>
+    <contract>
+      <id>Sales Clause with File</id>
+      <enable>true</enable>
+      <stages>
+        <stage>
+          <id>Clause stage</id>
+          <enable>true</enable>
+          <events>
+            <event>
+              <id>Clause create event</id>
+              <enable>true</enable>
+              <type>CREATE_BO</type>
+              <input>
+                  <entry>
+                    <string>ClauseLibraryBO</string>
+                      <entry>
+                        <string>attributes</string>
+                          <entry>
+                            <string>clauseComments</string>
+                            <string>Some Comment</string>
+                          </entry>
+                          <entry>
+                            <string>flag</string>
+                            <string>No</string>
+                          </entry>
+                          <entry>
+                            <string>clauseFile</string>
+                            <string>CSalesClausesFile.docx</string>
+                          </entry>
+                          <entry>
+                            <string>testsFilePath</string>
+                            <string>automatic/files/file.docx</string>
+                          </entry>
+                          <entry>
+                            <string>trackIt</string>
+                            <string>Yes</string>
+                          </entry>
+                          <entry>
+                            <string>clauseCategory</string>
+                            <string>Some Category</string>
+                          </entry>
+                          <entry>
+                            <string>name</string>
+                            <string>Sales clause with File</string>
+                          </entry>
+                          <entry>
+                            <string>clauseRisk</string>
+                            <string>None</string>
+                          </entry>
+                          <entry>
+                            <string>clauseSubCategory</string>
+                            <string>Some subCategory</string>
+                          </entry>
+                          <entry>
+                            <string>clauseType</string>
+                            <string>File</string>
+                          </entry>
+                          <entry>
+                            <string>contractTypeRef</string>
+                            <string>Sales</string>
+                          </entry>
+                          <entry>
+                            <string>visibleRoles</string>
+                            <string>Contract Manager|Contract Viewer|Approver</string>
+                          </entry>
+                      </entry>
+                  </entry>
+              </input>
+            </event>
+            <event>
+              <id>Clause complete event</id>
+              <enable>true</enable>
+              <type>COMPLETE</type>
+            </event>
+          </events>
+        </stage>
+      </stages>
+    </contract>
+  </contracts>
+</suite>

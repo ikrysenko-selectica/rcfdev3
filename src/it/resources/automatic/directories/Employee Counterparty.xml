@@ -1,0 +1,118 @@
+<suite>
+  <id>Employee Counterparty</id>
+  <enable>true</enable>
+  <userLogin>epavlovskaya@provectus.com</userLogin>
+  <userPassword>Sel123_</userPassword>
+  <contracts>
+    <contract>
+      <id>Employee Counterparty 1</id>
+      <enable>true</enable>
+      <stages>
+        <stage>
+          <id>Manage stage</id>
+          <enable>true</enable>
+          <name>Manage</name>
+          <events>
+            <event>
+              <id>CREATE_BO event</id>
+              <enable>true</enable>
+              <type>CREATE_BO</type>
+              <input>
+                  <entry>
+                    <string>DCPBO</string>
+                    <set>
+                        <entry>
+                          <string>summary</string>
+                            <entry>
+                              <string>country</string>
+                              <string>US</string>
+                            </entry>
+                            <entry>
+                              <string>zipPostalCode</string>
+                              <string>92263</string>
+                            </entry>
+                            <entry>
+                              <string>city</string>
+                              <string>Rialto</string>
+                            </entry>
+                            <entry>
+                              <string>name</string>
+                              <string>Britanney Harrington</string>
+                            </entry>
+                            <entry>
+                              <string>addressLine1</string>
+                              <string>6985 Neque Av.</string>
+                            </entry>
+                            <entry>
+                              <string>stateProvince</string>
+                              <string>Alaska</string>
+                            </entry>
+                            <entry>
+                              <string>addressLine2</string>
+                              <string>101-5243 Mi Street</string>
+                            </entry>
+                            <entry>
+                              <string>status</string>
+                              <string>Active</string>
+                            </entry>
+                        </entry>
+                    </set>
+                  </entry>
+              </input>
+              <output>
+                  <entry>
+                    <string>DCPBO</string>
+                    <set>
+                        <entry>
+                          <string>summary</string>
+                            <entry>
+                              <string>isDocumentChanged</string>
+                              <string>0</string>
+                            </entry>
+                            <entry>
+                              <string>country</string>
+                              <string>US</string>
+                            </entry>
+                            <entry>
+                              <string>zipPostalCode</string>
+                              <string>92263</string>
+                            </entry>
+                            <entry>
+                              <string>city</string>
+                              <string>Rialto</string>
+                            </entry>
+                            <entry>
+                              <string>name</string>
+                              <string>Britanney Harrington</string>
+                            </entry>
+                            <entry>
+                              <string>addressLine1</string>
+                              <string>6985 Neque Av.</string>
+                            </entry>
+                            <entry>
+                              <string>stateProvince</string>
+                              <string>Alaska</string>
+                            </entry>
+                            <entry>
+                              <string>addressLine2</string>
+                              <string>101-5243 Mi Street</string>
+                            </entry>
+                            <entry>
+                              <string>bundleCategory</string>
+                              <string>M</string>
+                            </entry>
+                            <entry>
+                              <string>status</string>
+                              <string>Active</string>
+                            </entry>
+                        </entry>
+                    </set>
+                  </entry>
+              </output>
+            </event>
+          </events>
+        </stage>
+      </stages>
+    </contract>
+  </contracts>
+</suite>
